@@ -19,3 +19,11 @@ models:
         data_tests:
           - unique
           - not_null
+
+sources:
+  - name: dbt_test
+    database: dbt_demo
+    schema: dbt_demo_schema
+    tables:
+      - name: emp
+      - name: dept
